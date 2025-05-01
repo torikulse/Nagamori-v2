@@ -4,7 +4,7 @@ import d2 from "../assets/d2.png";
 import d3 from "../assets/d3.png";
 import d4 from "../assets/d4.png";
 import d5 from "../assets/d5.png";
-import DoctorCard from "./doctorCard";
+import DoctorCard from "./DoctorCard";
 import DoctorCard2 from "./DoctorCard2";
 
 const Recommendation = () => {
