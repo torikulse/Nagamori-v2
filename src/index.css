@@ -48,3 +48,19 @@
 .s-card-subheading {
   @apply text-xs md:text-base lg:text-xl xl:text-[27px];
 }
+
+.input_item_wraper {
+  @apply mt-10 items-start justify-between gap-5 md:flex xl:gap-6;
+}
+.label_wraper {
+  @apply mb-3 flex items-start gap-4 md:mb-0 md:w-[38%] md:justify-between md:gap-0 lg:w-[30%];
+}
+.label_title {
+  @apply font-medium tracking-[0.0147em] md:text-lg md:tracking-[0.0155em] lg:text-xl lg:tracking-[0.0170em] xl:text-2xl xl:tracking-[0.0197em];
+}
+.label_icon {
+  @apply rounded-xl bg-[#D93636] px-4 py-1 text-[11px] font-semibold tracking-[0.053em] text-white md:text-[14px] xl:text-lg xl:text-[21px];
+}
+.input_box {
+  @apply h-full w-full rounded-lg border border-[#707070] bg-[#EBE9E7] px-3 py-4 outline-0 md:px-4 md:py-4.5 md:text-lg lg:px-5.5 lg:py-5.5 lg:text-xl xl:px-7 xl:py-6.5 xl:text-2xl;
+}
