@@ -15,7 +15,7 @@ const Recommendation = () => {
 
       <div className="large-con relative mt-10 md:mt-16 lg:mt-20 xl:mt-25">
         <div className="flex flex-col items-center">
-          <h1 className="sikita text-center text-[41px] md:text-[50px] lg:text-[60px] xl:text-[70px]">
+          <h1 className="sikita text-center text-[35px] md:text-[50px] lg:text-[60px] xl:text-[70px]">
             Recommendations
           </h1>
           <div className="h-underline"></div>
