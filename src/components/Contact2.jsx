@@ -78,7 +78,7 @@ const Contact2 = ({ formData, setFinalConfirmation }) => {
           </div>
         </div>
 
-        <p className="text-left leading-9 font-light md:text-center md:text-lg md:leading-12 lg:text-xl lg:font-normal xl:text-[25px]">
+        <p className="text-left leading-9 font-light md:text-center md:text-lg md:leading-12 lg:text-xl lg:font-normal lg:text-[#707070] xl:text-[25px]">
           下記の入力フォームに必須事項をご入力の上、
           <br />
           「入力内容を確認する」ボタンを押してください。
@@ -86,133 +86,110 @@ const Contact2 = ({ formData, setFinalConfirmation }) => {
           ※WEBでのご予約は受け付けておりません。
         </p>
       </div>
-      <div className="mx-auto mt-10 w-full border-t border-[#707070a0] md:w-[70%] md:px-5">
-        <div className="mt-10 items-center justify-between gap-5 md:flex">
-          <div className="mb-3 flex gap-5 md:mb-0 md:w-[35%] md:justify-between">
-            <p className="text-[5.5vw] font-light md:text-[1.3vw]">
-              ご相談項目
-            </p>
-            <div className="rounded-xl bg-[#D93636] px-4 py-1 font-bold text-white">
-              必須
+      <div className="large-con mt-10 border-t border-[#707070a0]">
+        <div className="px-6">
+          <div className="input_item_wraper">
+            <div className="label_wraper2">
+              <p className="label_title">ご相談項目</p>
+              <div className="label_icon">必須</div>
+            </div>
+            <div className="md:w-[50%] xl:w-[70%]">
+              <p className="detail_item">{formData.consultation}</p>
             </div>
           </div>
-          <div className="md:w-[65%]">
-            <p>{formData.consultation}</p>
-          </div>
-        </div>
 
-        <div className="items mt-15 justify-between gap-5 md:flex">
-          <div className="mb-3 flex gap-5 md:mb-0 md:w-[35%] md:justify-between">
-            <p className="text-[5.5vw] font-light md:text-[1.3vw]">お名前</p>
-            <div className="rounded-xl bg-[#D93636] px-4 py-1 font-bold text-white">
-              必須
+          <div className="input_item_wraper">
+            <div className="label_wraper2">
+              <p className="label_title">お名前</p>
+              <div className="label_icon">必須</div>
+            </div>
+            <div className="md:w-[50%] xl:w-[70%]">
+              <p className="detail_item">{formData.name}</p>
             </div>
           </div>
-          <div className="md:w-[65%]">
-            <p>{formData.name}</p>
-          </div>
-        </div>
 
-        <div className="mt-15 items-center justify-between gap-5 md:flex">
-          <div className="mb-3 flex gap-5 md:mb-0 md:w-[35%] md:justify-between">
-            <p className="text-[5.5vw] font-light md:text-[1.3vw]">
-              お名前（フリガナ）
-            </p>
-            <div className="rounded-xl bg-[#D93636] px-4 py-1 font-bold text-white">
-              必須
+          <div className="input_item_wraper">
+            <div className="label_wraper2">
+              <p className="label_title">お名前（フリガナ）</p>
+              <div className="label_icon">必須</div>
+            </div>
+            <div className="md:w-[50%] xl:w-[70%]">
+              <p className="detail_item">{formData.nameKana}</p>
             </div>
           </div>
-          <div className="md:w-[65%]">
-            <p>{formData.nameKana}</p>
-          </div>
-        </div>
 
-        <div className="mt-15 items-center justify-between gap-5 md:flex">
-          <div className="mb-3 flex gap-5 md:mb-0 md:w-[35%] md:justify-between">
-            <p className="text-[5.5vw] font-light md:text-[1.3vw]">Eメール</p>
-            <div className="rounded-xl bg-[#D93636] px-4 py-1 font-bold text-white">
-              必須
+          <div className="input_item_wraper">
+            <div className="label_wraper2">
+              <p className="label_title">Eメール</p>
+              <div className="label_icon">必須</div>
+            </div>
+            <div className="md:w-[50%] xl:w-[70%]">
+              <p className="detail_item">{formData.email}</p>
             </div>
           </div>
-          <div className="md:w-[65%]">
-            <p>{formData.email}</p>
-          </div>
-        </div>
 
-        <div className="mt-15 items-start justify-between gap-5 md:flex">
-          <div className="mb-3 flex gap-5 md:mb-0 md:w-[35%] md:justify-between">
-            <p className="text-[5.5vw] font-light md:text-[1.3vw]">
-              お問い合わせ内容
-            </p>
-            <div className="rounded-xl bg-[#D93636] px-4 py-1 font-bold text-white">
-              必須
+          <div className="input_item_wraper">
+            <div className="label_wraper2">
+              <p className="label_title">お問い合わせ内容</p>
+              <div className="label_icon">必須</div>
+            </div>
+            <div className="md:w-[50%] xl:w-[70%]">
+              <p className="detail_item">{formData.message}</p>
             </div>
           </div>
-          <div className="md:w-[65%]">
-            <p>{formData.message}</p>
-          </div>
-        </div>
 
-        <div className="mt-15 items-center justify-between gap-5 md:flex">
-          <div className="mb-3 flex gap-5 md:mb-0 md:w-[35%] md:justify-between">
-            <p className="text-[5.5vw] font-light md:text-[1.3vw]">電話番号</p>
-            <div className="rounded-xl bg-[#D93636] px-4 py-1 font-bold text-white">
-              必須
+          <div className="input_item_wraper">
+            <div className="label_wraper2">
+              <p className="label_title">電話番号</p>
+              <div className="label_icon">必須</div>
+            </div>
+            <div className="md:w-[50%] xl:w-[70%]">
+              <p className="detail_item">{formData.phone}</p>
             </div>
           </div>
-          <div className="md:w-[65%]">
-            <p>{formData.phone}</p>
-          </div>
-        </div>
 
-        <div className="mt-15 items-center justify-between gap-5 md:flex">
-          <div className="mb-3 flex gap-5 md:mb-0 md:w-[35%] md:justify-between">
-            <p className="text-[5.5vw] font-light md:text-[1.3vw]">ご年齢</p>
-            <div className="rounded-xl bg-[#D93636] px-4 py-1 font-bold text-white">
-              必須
+          <div className="input_item_wraper">
+            <div className="label_wraper2">
+              <p className="label_title">ご年齢</p>
+              <div className="label_icon">必須</div>
+            </div>
+            <div className="md:w-[50%] xl:w-[70%]">
+              <p className="detail_item">{formData.age}</p>
             </div>
           </div>
-          <div className="md:w-[65%]">
-            <p>{formData.age}</p>
-          </div>
-        </div>
 
-        <div className="mt-15 items-center justify-between gap-5 md:flex">
-          <div className="mb-3 flex gap-5 md:mb-0 md:w-[35%] md:justify-between">
-            <p className="text-[5.5vw] font-light md:text-[1.3vw]">性別</p>
-            <div className="rounded-xl bg-[#D93636] px-4 py-1 font-bold text-white">
-              必須
+          <div className="input_item_wraper">
+            <div className="label_wraper2">
+              <p className="label_title">性別</p>
+              <div className="label_icon">必須</div>
+            </div>
+            <div className="md:w-[50%] xl:w-[70%]">
+              <p className="detail_item">
+                {formData.gender === "male" ? "男" : "女"}
+              </p>
             </div>
           </div>
-          <div className="flex gap-10 md:block md:w-[65%]">
-            <p>{formData.gender === "male" ? "男" : "女"}</p>
-          </div>
-        </div>
 
-        <div className="mt-10 items-center justify-between gap-5 md:flex">
-          <div className="mb-3 flex gap-5 md:mt-10 md:mb-0 md:w-[35%] md:justify-between">
-            <p className="text-[5.5vw] font-light md:text-[1.3vw] md:leading-10">
-              何を見て当院をお知り
-              <br />
-              になりましたか？
-            </p>
-            <div className="h-9 rounded-xl bg-[#D93636] px-4 py-1 font-bold text-white">
-              必須
+          <div className="input_item_wraper">
+            <div className="label_wraper2">
+              <p className="label_title">
+                何を見て当院をお知り
+                <br />
+                になりましたか？
+              </p>
+              <div className="label_icon">必須</div>
+            </div>
+            <div className="md:w-[50%] xl:w-[70%]">
+              <p className="detail_item">{formData.referralSource}</p>
             </div>
           </div>
-          <div className="md:w-[65%]">
-            <p>{formData.referralSource}</p>
-          </div>
-        </div>
 
-        <div className="mt-20 flex w-full justify-center">
-          <img onClick={sendEmail} className="md:hidden" src={btn5} alt="" />
-          <img
-            onClick={sendEmail}
-            className="hidden md:block"
-            src={submitSmBtn}
-            alt=""
-          />
+          <div className="mt-20 flex w-full justify-center">
+            <button onClick={sendEmail} className="hover:cursor-pointer">
+              <img className="md:hidden" src={btn5} alt="" />
+              <img className="hidden md:block" src={submitSmBtn} alt="" />
+            </button>
+          </div>
         </div>
       </div>
     </div>
