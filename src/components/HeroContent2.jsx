@@ -31,7 +31,7 @@ const HeroContent2 = () => {
         </div>
 
         <div className="relative flex w-full flex-col justify-center">
-          <div className="relative mt-5 mr-auto ml-auto flex w-[390px] flex-col items-center justify-center py-10 md:-mt-3 md:ml-0 md:pt-0 lg:w-[490px] xl:w-[628px] xl:flex-col xl:items-start xl:py-0">
+          <div className="relative mt-5 mr-auto ml-auto flex w-[330px] flex-col items-center justify-center py-10 md:-mt-3 md:ml-0 md:pt-0 lg:w-[490px] xl:w-[628px] xl:flex-col xl:items-start xl:py-0">
             <img
               src={technique}
               alt=""
