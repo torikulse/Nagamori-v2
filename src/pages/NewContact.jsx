@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import Contact1 from "../components/Contact1";
-import Contact2 from "../components/Contact2";
-import Contact3 from "../components/Contact3";
+import ContactHeader from "../components/Contact/ContactHeader";
+import ContactForm from "../components/Contact/ContactForm";
 
-const Contact = () => {
+export default function NewContact() {
   const [formData, setFormData] = useState({
     consultation: "", // ご相談項目
     name: "", // お名前
@@ -42,25 +41,15 @@ const Contact = () => {
       setShowConfirmation(true);
     }
   };
-
+  //previews code
+  const [step, setStep] = useState(1);
+  const handleStep = () => {
+    setStep((prev) => prev + 1);
+  };
   return (
-    <div className="large-con mt-[64px] md:mt-[75px] lg:mt-[85px] xl:mt-25">
-      {finalConfirmation ? (
-        <Contact3 />
-      ) : !showConfirmation ? (
-        <Contact1
-          formData={formData}
-          setFormData={setFormData}
-          onSubmit={handleFormSubmit}
-        />
-      ) : (
-        <Contact2
-          formData={formData}
-          setFinalConfirmation={setFinalConfirmation}
-        />
-      )}
+    <div>
+      <ContactHeader step={step} />
+      {step == 1 ? <ContactForm /> : ""}
     </div>
   );
-};
-
-export default Contact;
+}

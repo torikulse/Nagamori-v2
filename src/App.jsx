@@ -7,6 +7,7 @@ import Treatment from "./pages/Treatment";
 import Contact from "./pages/Contact";
 import Schedule from "./pages/Schedule";
 import MobileNav from "./components/MobileNav";
+import NewContact from "./pages/NewContact";
 
 const App = () => {
   const [sidebar, setSidebar] = useState(false);
@@ -17,7 +18,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/treatment" element={<Treatment />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<NewContact />} />
         <Route path="/schedule" element={<Schedule />} />
       </Routes>
       <Footer />
