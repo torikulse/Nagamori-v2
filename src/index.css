@@ -55,6 +55,9 @@
 .label_wraper {
   @apply mb-3 flex items-start gap-4 md:mb-0 md:w-[38%] md:justify-between md:gap-0 lg:w-[30%];
 }
+.label_wraper2 {
+  @apply mb-3 flex items-start gap-4 md:mb-0 md:w-[50%] md:justify-between md:gap-0 xl:w-[30%];
+}
 .label_title {
   @apply font-medium tracking-[0.0147em] md:text-lg md:tracking-[0.0155em] lg:text-xl lg:tracking-[0.0170em] xl:text-2xl xl:tracking-[0.0197em];
 }
@@ -63,4 +66,8 @@
 }
 .input_box {
   @apply h-full w-full rounded-lg border border-[#707070] bg-[#EBE9E7] px-3 py-4 outline-0 md:px-4 md:py-4.5 md:text-lg lg:px-5.5 lg:py-5.5 lg:text-xl xl:px-7 xl:py-6.5 xl:text-2xl;
+}
+
+.detail_item {
+  @apply font-light tracking-[0.0197em] md:text-lg lg:text-xl xl:text-2xl;
 }

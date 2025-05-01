@@ -75,7 +75,7 @@ const Contact1 = ({ formData, setFormData, onSubmit }) => {
           </div>
         </div>
 
-        <p className="text-left leading-9 font-light md:text-center md:text-lg md:leading-12 lg:text-xl lg:font-normal xl:text-[25px]">
+        <p className="text-left leading-9 font-light md:text-center md:text-lg md:leading-12 lg:text-xl lg:font-normal lg:text-[#707070] xl:text-[25px]">
           下記の入力フォームに必須事項をご入力の上、
           <br />
           「入力内容を確認する」ボタンを押してください。
@@ -267,7 +267,7 @@ const Contact1 = ({ formData, setFormData, onSubmit }) => {
         </div>
 
         <div className="mt-20 flex w-full justify-center">
-          <button type="submit">
+          <button type="submit" className="hover:cursor-pointer">
             <img src={btn5} className="md:hidden" alt="" />
             <img src={submitSmBtn} className="hidden md:block" alt="" />
           </button>

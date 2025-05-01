@@ -40,7 +40,7 @@ const Contact3 = () => {
           </div>
         </div>
 
-        <p className="text-left leading-9 font-light md:text-center md:text-lg md:leading-12 lg:text-xl lg:font-normal xl:text-[25px]">
+        <p className="text-left leading-9 font-light md:text-center md:text-lg md:leading-12 lg:text-xl lg:font-normal lg:text-[#707070] xl:text-[25px]">
           下記の入力フォームに必須事項をご入力の上、
           <br />
           「入力内容を確認する」ボタンを押してください。
@@ -49,11 +49,11 @@ const Contact3 = () => {
         </p>
       </div>
 
-      <div className="w-full md:w-[70%] mx-auto border-t mt-10 border-[#707070a0] md:px-5 flex flex-col items-center">
-        <div className="w-20 h-20 flex rounded-full bg-[#00FFB1] items-center justify-center mt-10 mb-10 ">
+      <div className="mx-auto mt-10 flex w-full flex-col items-center border-t border-[#707070a0] md:w-[70%] md:px-5">
+        {/* <div className="w-20 h-20 flex rounded-full bg-[#00FFB1] items-center justify-center mt-10 mb-10 ">
           <img src={tick} alt="" className="h-10 w-10" />
-        </div>
-        <p className="font-light leading-9 text-center">
+        </div> */}
+        <p className="mt-16 text-left leading-9 font-light md:text-center md:text-lg md:leading-12 lg:text-xl lg:font-normal lg:text-[#707070] xl:text-[25px]">
           フォームに記載した内容は正常に送信されました。
           <br />
           ご返信に2~3日営業日かかることがあります。
