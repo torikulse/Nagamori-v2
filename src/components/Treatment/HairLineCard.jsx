@@ -1,7 +1,7 @@
 import React from "react";
 
 import t4 from "../../assets/t4.png";
-import PriceCard from "../priceCard";
+import PriceCard from "../PriceCard";
 import PriceCard2 from "../PriceCard2";
 import SideShape from "../SideShape";
 import TSectionHeader from "./TSectionHeader";

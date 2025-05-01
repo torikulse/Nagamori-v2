@@ -1,6 +1,6 @@
 import React from "react";
 import t2 from "../../assets/t2.png";
-import PriceCard from "../priceCard";
+import PriceCard from "../PriceCard";
 import PriceCard2 from "../PriceCard2";
 import SideShape from "../SideShape";
 import TSectionHeader from "./TSectionHeader";
