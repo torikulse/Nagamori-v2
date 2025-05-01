@@ -46,13 +46,11 @@ const Menu = () => {
           </div>
         </div>
         <Link to="/treatment">
-          <button>
-            <img
-              src={btn3}
-              alt=""
-              className="mt-10 w-full cursor-pointer md:mt-13 lg:mt-17 xl:mt-20"
-            />
-          </button>
+          <img
+            src={btn3}
+            alt=""
+            className="mt-10 w-full cursor-pointer md:mt-13 lg:mt-17 xl:mt-20"
+          />
         </Link>
         <p className="mt-8 text-[13px] tracking-[0.097em] md:mt-9 md:text-base lg:mt-10 lg:text-[22px] xl:mt-12 xl:text-[25px]">
           初めての方も、お気軽にお問い合わせください。

@@ -47,24 +47,14 @@ export default function Navbar({ sidebar, setSidebar }) {
   return (
     <>
       <div className="fixed top-0 left-0 z-20 flex h-[75px] w-full items-center justify-between bg-white px-7 md:h-[90px] lg:h-[114px] lg:pb-4 xl:pr-30">
-        <div>
+        <Link to={"/"}>
           <img
-            onClick={() => {
-              navigate("/");
-            }}
             src={logo}
             alt="logo"
             className="hidden cursor-pointer md:block"
           />
-          <img
-            onClick={() => {
-              navigate("/");
-            }}
-            src={Nlogo}
-            alt="logo"
-            className="cursor-pointer md:hidden"
-          />
-        </div>
+          <img src={Nlogo} alt="logo" className="cursor-pointer md:hidden" />
+        </Link>
         <div className="md:flex md:flex-col md:items-end">
           <div className="mb-2 hidden lg:mb-0 lg:flex lg:flex-col lg:items-end lg:gap-6">
             <div
@@ -134,7 +124,7 @@ export default function Navbar({ sidebar, setSidebar }) {
               </Link>
             </div>
           </div>
-          <div className="lg:hidden">
+          <div className="hover:cursor-pointer lg:hidden">
             {sidebar ? (
               <RxCross1
                 size={28}

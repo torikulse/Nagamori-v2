@@ -87,13 +87,11 @@ const Info = () => {
         </p>
 
         <Link to="/contact">
-          <button>
-            <img
-              src={btn4}
-              alt=""
-              className="mt-11 w-full cursor-pointer md:mt-13 lg:mt-14 xl:mt-16"
-            />
-          </button>
+          <img
+            src={btn4}
+            alt=""
+            className="mt-11 w-full cursor-pointer md:mt-13 lg:mt-14 xl:mt-16"
+          />
         </Link>
       </div>
     </div>

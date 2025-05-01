@@ -38,13 +38,11 @@ const Portfolio = () => {
           <img src={p12} alt="" />
         </div>
         <Link to="https://www.instagram.com/tomomi_nagamori_art?igsh=bmtpYzRvZXQ1bXE1">
-          <button>
             <img
               src={btn6}
               alt=""
               className="mt-12 w-full cursor-pointer md:mt-20 lg:mt-25 xl:mt-30"
             />
-          </button>
         </Link>
       </div>
     </div>

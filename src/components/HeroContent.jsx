@@ -2,6 +2,7 @@ import React from "react";
 import intersection from "../assets/Intersection.png";
 import concept from "../assets/concept.png";
 import btn1 from "../assets/btn1.svg";
+import { Link } from "react-router-dom";
 
 const HeroContent = () => {
   return (
@@ -34,7 +35,9 @@ const HeroContent = () => {
             <img src={intersection} alt="" className="w-full" />
           </div>
           <div className="mt-10 flex justify-center md:hidden">
-            <img src={btn1} alt="" />
+            <Link to={"/"}>
+              <img src={btn1} alt="" />
+            </Link>
           </div>
         </div>
       </div>
