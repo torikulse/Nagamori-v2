@@ -1,6 +1,7 @@
 import React from "react";
 import btn5 from "../assets/btn5.svg";
 import emailjs from "emailjs-com";
+import submitSmBtn from "../assets/submit-sm-btn.svg";
 
 const Contact2 = ({ formData, setFinalConfirmation }) => {
   const sendEmail = () => {
@@ -205,7 +206,13 @@ const Contact2 = ({ formData, setFinalConfirmation }) => {
         </div>
 
         <div className="mt-20 flex w-full justify-center">
-          <img onClick={sendEmail} src={btn5} alt="" />
+          <img onClick={sendEmail} className="md:hidden" src={btn5} alt="" />
+          <img
+            onClick={sendEmail}
+            className="hidden md:block"
+            src={submitSmBtn}
+            alt=""
+          />
         </div>
       </div>
     </div>

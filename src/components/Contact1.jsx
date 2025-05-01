@@ -1,5 +1,6 @@
 import React from "react";
 import btn5 from "../assets/btn5.svg";
+import submitSmBtn from "../assets/submit-sm-btn.svg";
 
 const Contact1 = ({ formData, setFormData, onSubmit }) => {
   const handleInputChange = (e) => {
@@ -267,7 +268,8 @@ const Contact1 = ({ formData, setFormData, onSubmit }) => {
 
         <div className="mt-20 flex w-full justify-center">
           <button type="submit">
-            <img src={btn5} alt="" />
+            <img src={btn5} className="md:hidden" alt="" />
+            <img src={submitSmBtn} className="hidden md:block" alt="" />
           </button>
         </div>
       </form>
