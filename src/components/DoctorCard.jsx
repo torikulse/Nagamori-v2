@@ -4,7 +4,7 @@ export default function DoctorCard({ image, t1, t2, t3 }) {
   return (
     <div className="mb-20 md:mb-0">
       <div>
-        <img src={image} alt="" className="h-full w-full object-cover" />
+        <img src={image} alt="doctor" className="h-full w-full object-cover" />
         <div className="mt-2">
           <div className="mt-[19px] mb-[23px] h-[1px] w-10 bg-[#707070] opacity-20"></div>
           <p className="sikita text-[33px] font-bold opacity-20">doctor</p>

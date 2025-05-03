@@ -18,7 +18,7 @@ export default function HairLineCard() {
           lineText={"料金表"}
         />
         <div className="mx-auto mt-2 w-full">
-          <img src={t4} className="w-full" alt="" />
+          <img src={t4} className="w-full" alt="t4_image" />
         </div>
 
         <div>

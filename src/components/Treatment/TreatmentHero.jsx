@@ -22,14 +22,14 @@ export default function TreatmentHero() {
           <div className="flex h-full w-1/2 items-end">
             <img
               src={hero}
-              alt=""
+              alt="hero"
               className="h-[180px] w-full object-cover md:h-auto"
             />
           </div>
           <div className="flex w-1/2 items-start md:items-center md:justify-end">
             <img
               src={herowhite}
-              alt=""
+              alt="hero_white"
               className="md:mt0 mt-9 w-[192px] md:w-[280px] lg:w-[400px] xl:w-[527px]"
             />
           </div>

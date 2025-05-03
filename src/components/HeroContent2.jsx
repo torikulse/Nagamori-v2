@@ -2,11 +2,12 @@ import React from "react";
 import vid1 from "../assets/vid1.mov";
 import vid2 from "../assets/vid2.mov";
 import technique from "../assets/technique.png";
+import SideShape from "./SideShape";
 
 const HeroContent2 = () => {
   return (
     <div className="relative md:mt-20 lg:mt-30 xl:mt-44">
-      <div className="absolute top-0 right-0 hidden h-[740px] bg-[#B6BFBC] opacity-[12%] xl:block xl:w-[547px]"></div>
+      <SideShape height={"757px"} right={"0"} />
       <div className="large-con relative flex flex-col-reverse md:flex-row md:items-start md:gap-6 lg:gap-10 xl:gap-22">
         <div className="mt-14 flex w-full flex-col gap-5 md:mt-0 md:max-w-[340px] lg:max-w-[390px]">
           <div className="aspect-square w-full overflow-hidden">
@@ -15,6 +16,7 @@ const HeroContent2 = () => {
               autoPlay
               loop
               muted
+              playsInline
               className="h-full w-full object-cover"
             ></video>
           </div>
@@ -25,7 +27,8 @@ const HeroContent2 = () => {
               autoPlay
               loop
               muted
-              className="w-full object-cover"
+              playsInline
+              className="h-full w-full object-cover"
             ></video>
           </div>
         </div>
@@ -34,7 +37,7 @@ const HeroContent2 = () => {
           <div className="relative mt-5 mr-auto ml-auto flex w-[330px] flex-col items-center justify-center py-10 md:-mt-3 md:ml-0 md:pt-0 lg:w-[490px] xl:w-[628px] xl:flex-col xl:items-start xl:py-0">
             <img
               src={technique}
-              alt=""
+              alt="technique"
               className="absolute left-1/2 w-56 -translate-x-1/2 opacity-40 xl:relative xl:left-0 xl:w-72 xl:-translate-0 xl:opacity-60"
             />
             <p className="self-start text-[28px] tracking-[0.055em] text-[#606060] lg:text-[35px] xl:-mt-5 xl:text-[45px] xl:font-light xl:text-black">

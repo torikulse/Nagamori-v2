@@ -11,16 +11,14 @@ const Footer = () => {
           alt=""
           className="md:w-[260px] lg:w-[450px] xl:w-[560px]"
         />
-        <img
-          onClick={() => {
-            window.location.replace(
-              "https://www.instagram.com/tomomi_nagamori_art?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-            );
-          }}
-          src={instalogo}
-          alt=""
+        <a
           className="mt-[70px] aspect-square w-9.5 cursor-pointer md:mt-0 md:w-12 lg:w-16 xl:w-20"
-        />
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.instagram.com/tomomi_nagamori_art?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+        >
+          <img src={instalogo} className="w-full" />
+        </a>
       </div>
       <p className="mt-[83px] text-center text-xs leading-[20px] md:mt-22 lg:mt-24 xl:mt-[106px] xl:text-xl">
         ご予約・お問い合わせは、LINEより受け付けております。ご不明点等ございましたら、お気軽にご連絡くださいませ。

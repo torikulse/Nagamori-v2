@@ -4,20 +4,18 @@ import menu2_1 from "../assets/menu2_1.png";
 import menu2_2 from "../assets/menu2_2.png";
 import menu2_3 from "../assets/menu2_3.png";
 import menu2_4 from "../assets/menu2_4.png";
-import tail from "../assets/Tail.png";
-import shadow from "../assets/Shadow.png";
-import hairline from "../assets/Hairline.png";
-import lips from "../assets/Lips.png";
+import lineLogo from "../assets/lineLogo.png";
+import SideShape from "./SideShape";
 
 const Menu2 = () => {
   return (
     <div className="relative md:mt-20 lg:mt-30 xl:mt-44">
-      <div className="absolute top-0 left-0 hidden h-[1036px] bg-[#B6BFBC] opacity-[12%] xl:block xl:w-[547px]"></div>
+      <SideShape height={"1036px"} />
       <div className="large-con relative mt-12 flex flex-col items-center">
         <div className="relative flex items-center justify-center py-10 md:flex-col md:items-start">
           <img
             src={techniq}
-            alt=""
+            alt="technique"
             className="absolute left-1/2 w-36 -translate-x-1/2 -rotate-[20deg] opacity-40 md:relative md:w-40 md:rotate-0 lg:w-45 xl:w-52 xl:opacity-60"
           />
           <p className="text-[28px] tracking-[0.055em] text-[#606060] xl:text-[45px] xl:font-light xl:text-black">
@@ -26,11 +24,21 @@ const Menu2 = () => {
         </div>
         <div className="grid grid-cols-1 gap-x-4 gap-y-20 md:grid-cols-2 md:gap-8 xl:grid-cols-4">
           <div className="flex flex-col">
-            <div>
-              <img src={menu2_1} alt="" className="w-full" />
+            <div className="relative">
+              <img src={menu2_1} alt="menu" className="w-full" />
+              <a
+                className="absolute right-3 bottom-3 w-10 transition-opacity md:hidden"
+                href="https://line.me/R/ti/p/@321iyeoj"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={lineLogo} className="w-full" alt="line_logo" />
+              </a>
             </div>
             <div>
-              <img src={tail} alt="" className="mt-9" />
+              <h3 className="Segoe mt-9 text-[32px] text-[#C8C8C8] opacity-60">
+                Tail Eyeline
+              </h3>
               <p className="mt-1 text-xl leading-10 font-medium text-[#606060] md:-mt-4">
                 テールアイライン
               </p>
@@ -48,10 +56,12 @@ const Menu2 = () => {
 
           <div className="flex flex-col">
             <div>
-              <img src={menu2_2} alt="" className="w-full" />
+              <img src={menu2_2} alt="menu" className="w-full" />
             </div>
             <div>
-              <img src={shadow} alt="" className="mt-9" />
+              <h3 className="Segoe mt-9 text-[32px] text-[#C8C8C8] opacity-60">
+                Shadow Eyeline
+              </h3>
               <p className="mt-1 text-xl leading-10 font-medium text-[#606060] md:-mt-4">
                 シャドウアイライン
               </p>
@@ -69,10 +79,12 @@ const Menu2 = () => {
 
           <div className="flex flex-col">
             <div>
-              <img src={menu2_3} alt="" className="w-full" />
+              <img src={menu2_3} alt="menu" className="w-full" />
             </div>
             <div>
-              <img src={lips} alt="" className="mt-9" />
+              <h3 className="Segoe mt-9 text-[32px] text-[#C8C8C8] opacity-60">
+                Lips
+              </h3>
               <p className="mt-1 text-xl leading-10 font-medium text-[#606060] md:-mt-4">
                 リップ
               </p>
@@ -90,10 +102,12 @@ const Menu2 = () => {
 
           <div className="flex flex-col">
             <div>
-              <img src={menu2_4} alt="" className="w-full" />
+              <img src={menu2_4} alt="menu" className="w-full" />
             </div>
             <div>
-              <img src={hairline} alt="" className="mt-9" />
+              <h3 className="Segoe mt-9 text-[32px] text-[#C8C8C8] opacity-60">
+                Hairline
+              </h3>
               <p className="mt-1 text-xl leading-10 font-medium text-[#606060] md:-mt-4">
                 ヘアライン
               </p>

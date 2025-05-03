@@ -7,6 +7,7 @@ import Treatment from "./pages/Treatment";
 import Contact from "./pages/Contact";
 import Schedule from "./pages/Schedule";
 import MobileNav from "./components/MobileNav";
+import BorderCutBtn from "./components/Button/BorderCutBtn";
 
 const App = () => {
   const [sidebar, setSidebar] = useState(false);

@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation, Router } from "react-router-dom";
 import logo from "../assets/newLogo.svg";
-import { CiMenuBurger } from "react-icons/ci";
 import { RxCross1 } from "react-icons/rx";
 import line from "../assets/line.svg";
 import Nlogo from "../assets/Nlogo.svg";
@@ -57,14 +56,15 @@ export default function Navbar({ sidebar, setSidebar }) {
         </Link>
         <div className="md:flex md:flex-col md:items-end">
           <div className="mb-2 hidden lg:mb-0 lg:flex lg:flex-col lg:items-end lg:gap-6">
-            <div
-              onClick={() => {
-                window.location.replace("https://line.me/R/ti/p/@321iyeoj");
-              }}
+            <a
+              href="https://line.me/R/ti/p/@321iyeoj"
+              target="_blank"
+              rel="noopener noreferrer"
               className="cursor-pointer rounded-b-md bg-[#06C755] px-4"
             >
               <img src={line} alt="" className="lg:w-40 xl:w-44" />
-            </div>
+            </a>
+
             <div className="hidden lg:flex lg:gap-25 xl:gap-35">
               <Link
                 onClick={() => {

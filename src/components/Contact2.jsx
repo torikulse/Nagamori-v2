@@ -1,7 +1,6 @@
 import React from "react";
-import btn5 from "../assets/btn5.svg";
 import emailjs from "emailjs-com";
-import submitSmBtn from "../assets/submit-sm-btn.svg";
+import BorderCutBtnFill from "./Button/BorderCutBtnFill";
 
 const Contact2 = ({ formData, setFinalConfirmation }) => {
   const sendEmail = () => {
@@ -185,9 +184,11 @@ const Contact2 = ({ formData, setFinalConfirmation }) => {
           </div>
 
           <div className="mt-20 flex w-full justify-center">
-            <button onClick={sendEmail} className="hover:cursor-pointer">
-              <img className="md:hidden" src={btn5} alt="" />
-              <img className="hidden md:block" src={submitSmBtn} alt="" />
+            <button
+              onClick={sendEmail}
+              className="w-full hover:cursor-pointer sm:w-fit"
+            >
+              <BorderCutBtnFill text={"送信"} />
             </button>
           </div>
         </div>

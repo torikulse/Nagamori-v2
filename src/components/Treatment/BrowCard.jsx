@@ -15,7 +15,7 @@ export default function BrowCard() {
           lineText={"料金表"}
         />
         <div className="mx-auto mt-2 w-full xl:mt-8.5">
-          <img src={t1} alt="" />
+          <img src={t1} alt="t1Image" />
         </div>
 
         <div className="mt-8">

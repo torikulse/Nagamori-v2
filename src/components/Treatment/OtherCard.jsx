@@ -16,7 +16,7 @@ export default function OtherCard() {
           lineText={"料金表"}
         />
         <div className="mx-auto mt-2 w-full">
-          <img src={t5} className="w-full" alt="" />
+          <img src={t5} className="w-full" alt="other_image" />
         </div>
         <div>
           <SmallHeading text="涙袋アートメイク" />

@@ -1,5 +1,5 @@
 import React from "react";
-import tick from "../assets/tick.png";
+
 
 const Contact3 = () => {
   return (

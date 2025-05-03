@@ -24,18 +24,18 @@ const Schedule = () => {
         <div className="relative w-full">
           <img
             src={newhero}
-            alt=""
+            alt="new_hero"
             className="w-full object-cover object-right md:object-center"
           />
           <img
             src={smLogo}
             className="absolute right-2 bottom-1 md:hidden"
-            alt=""
+            alt="small_logo"
           />
           <img
             src={whitelogo}
             className="absolute right-3 bottom-2 hidden md:block"
-            alt=""
+            alt="whiteLogo"
           />
         </div>
         <div className="large-con mt-[53px] px-6 leading-[36px] font-light md:mt-9 md:text-xl md:leading-[40px] lg:mt-8 lg:text-2xl lg:leading-[48px] xl:text-3xl xl:leading-[51px]">

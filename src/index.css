@@ -5,6 +5,10 @@
   font-family: "Sikita";
   src: url("./assets/fonts/Sitka.ttc");
 }
+@font-face {
+  font-family: "Segoe";
+  src: url("./assets/fonts/SegoeScript.ttf");
+}
 
 * {
   font-family: "Noto Sans JP", serif;
@@ -20,6 +24,9 @@
 
 .sikita {
   font-family: "Sikita";
+}
+.Segoe {
+  font-family: "Segoe";
 }
 
 .large-con {
@@ -70,4 +77,37 @@
 
 .detail_item {
   @apply font-light tracking-[0.0197em] md:text-lg lg:text-xl xl:text-2xl;
+}
+
+.border_cut_btn {
+  clip-path: polygon(0 0, 94.5% 0%, 100% 20%, 100% 100%, 0 100%);
+  background-color: rgba(48, 48, 48, 0.52);
+  color: #979797;
+  position: relative;
+  cursor: pointer;
+}
+.border_cut_btn:hover {
+  background-color: rgba(48, 48, 48, 0.7);
+  color: #757575;
+}
+.border_cut_btn::before {
+  content: "";
+  clip-path: polygon(0 0, 94.5% 0%, 100% 20%, 100% 100%, 0 100%);
+  background-color: white;
+  inset: 3px;
+  position: absolute;
+  z-index: -10;
+}
+
+.border_cut_btn_fill {
+  clip-path: polygon(0 0, 94.5% 0%, 100% 20%, 100% 100%, 0 100%);
+  background-color: hsla(0, 0%, 0%, 0.12);
+  color: hsla(0, 0%, 9%, 0.745);
+  position: relative;
+  cursor: pointer;
+}
+
+.border_cut_btn_fill:hover {
+  background-color: hsla(0, 0%, 0%, 0.17);
+  color: hsla(0, 0%, 9%, 1);
 }

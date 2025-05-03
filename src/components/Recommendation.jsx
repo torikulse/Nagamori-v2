@@ -5,13 +5,13 @@ import d3 from "../assets/d3.png";
 import d4 from "../assets/d4.png";
 import d5 from "../assets/d5.png";
 import DoctorCard from "./DoctorCard";
-import DoctorCard2 from "./DoctorCard2";
+import SideShape from "./SideShape";
 
 const Recommendation = () => {
   return (
     <div className="relative">
-      <div className="absolute top-0 right-0 hidden h-[850px] bg-[#B6BFBC] opacity-[12%] xl:block xl:w-[547px]"></div>
-      <div className="absolute bottom-0 left-0 hidden h-[840px] bg-[#B6BFBC] opacity-[12%] xl:block xl:w-[547px]"></div>
+      <SideShape height={"851px"} right={"0"} />
+      <SideShape height={"843px"} bottom={"0"} />
 
       <div className="large-con relative mt-10 md:mt-16 lg:mt-20 xl:mt-25">
         <div className="flex flex-col items-center">
@@ -41,7 +41,11 @@ const Recommendation = () => {
 
           <div className="mb-20 md:mb-0">
             <div>
-              <img src={d3} alt="" className="h-full w-full object-cover" />
+              <img
+                src={d3}
+                alt="doctor"
+                className="h-full w-full object-cover"
+              />
               <div className="mt-2">
                 <div className="mt-[19px] mb-[23px] h-[1px] w-10 bg-[#707070] opacity-20"></div>
                 <p className="sikita text-[33px] font-bold opacity-20">
@@ -73,7 +77,11 @@ const Recommendation = () => {
 
           <div>
             <div>
-              <img src={d2} alt="" className="h-full w-full object-cover" />
+              <img
+                src={d2}
+                alt="doctor"
+                className="h-full w-full object-cover"
+              />
               <div className="mt-2">
                 <div className="mt-[19px] mb-[23px] h-[1px] w-10 bg-[#707070] opacity-20"></div>
                 <p className="sikita text-[33px] font-bold opacity-20">
